@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.lora {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lilita-one-regular {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.afacad-flux {
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+}
+
+body {
+    height: 5000px;
+    background-color: #ffffff;
+    font-family: "DM Sans", sans-serif;
+}
+
+header {
+    min-height: 100vh;
+    /* justify-content: center;
+    align-items: center; */
+    z-index: 10;
+    padding: 0 14rem;
+}
+
+header h1 {
+    font-size: clamp(2.85rem, 2.18rem + 3.37vw, 4.58rem);
+}
+
+.scroll-text {
+    /* margin-top: -100rem; */
+    position: fixed;
+    top: 0;
+    left: -800px;
+    white-space: nowrap;
+    z-index: -1;
+    transition: all 0.9s;
+}
+
+.bg-text {
+    font-size: 30rem;
+    color: rgb(255, 255, 255);
+    -webkit-text-fill-color: #ffffff;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #ff7b00;
+    font-weight: bold;
+}
